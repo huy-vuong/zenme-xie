@@ -1,2 +1,20 @@
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
+
+.hanzi-animation {
+  text-align: center;
+}
+
+.hanzi-card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+line.rice-grid-border {
+  stroke: #dddddd;
+}
+
+line.rice-grid-guide {
+  stroke: #eeeeee;
+  stroke-width: 2px;
+}
