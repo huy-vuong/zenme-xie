@@ -24,3 +24,11 @@ jobs:
           CI: true
       - name: Build
         run: npm run build
+      - name: Deploy
+        env:
+          actions_gh_pages_token: ${{ secrets.ACTIONS_GH_PAGES_TOKEN }}
+        run: |
+          git config --global user.name 'Huy Vuong'
+          git config --global user.email 'huy-vuong@users.noreply.github.com'
+          git remote set-url origin https://${actions_gh_pages_token}@github.com/huy-vuong/zenme-xie.git
+          npm run deploy
