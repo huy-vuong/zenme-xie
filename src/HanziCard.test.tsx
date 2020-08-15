@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-import HanziCard from './HanziCard';
+import HanziCard from 'zenme-xie/HanziCard';
 
 test('renders a card with the given character printed', async () => {
   const { getByText } = render(<HanziCard character="貓" index={0} />);

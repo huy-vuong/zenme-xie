@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import HanziGrid from './HanziGrid';
+import HanziGrid from 'zenme-xie/HanziGrid';
 
 export default function HanziCard({ character, index }: HanziCardProp) {
   return (

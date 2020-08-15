@@ -27,20 +27,39 @@
     "@sheerun/mutationobserver-shim": "^0.3.3",
     "@testing-library/jest-dom": "^5.11.3",
     "@testing-library/react": "^10.4.8",
-    "@testing-library/user-event": "^12.1.1"
+    "@testing-library/user-event": "^12.1.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "link-module-alias": "^1.2.0"
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "format": "prettier --write src/**/*.{ts,tsx,css}",
     "lint": "eslint src/**/*.{ts,tsx} --fix && tsc --noEmit",
+    "preinstall": "command -v link-module-alias && link-module-alias clean || true",
+    "postinstall": "link-module-alias",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "settings": {
+      "import/resolver": {
+        "alias": {
+          "map": [
+            [
+              "zenme-xie",
+              "./src"
+            ]
+          ],
+          "extensions": [
+            ".tsx"
+          ]
+        }
+      }
+    }
   },
   "prettier": {
     "singleQuote": true
@@ -57,6 +76,9 @@
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
     ]
+  },
+  "_moduleAliases": {
+    "zenme-xie": "src"
   },
   "browserslist": {
     "production": [

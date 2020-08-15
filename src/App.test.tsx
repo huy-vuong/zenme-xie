@@ -1,6 +1,6 @@
 import { render, fireEvent } from '@testing-library/react';
 import React from 'react';
-import App from './App';
+import App from 'zenme-xie/App';
 
 test('renders app title', () => {
   const { getByText } = render(<App />);

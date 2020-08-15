@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import FormControl from 'react-bootstrap/FormControl';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
-import HanziCardList from './HanziCardList';
+import HanziCardList from 'zenme-xie/HanziCardList';
 
 export default function App() {
   const [text, setText] = useState('貓咪喵喵叫');
