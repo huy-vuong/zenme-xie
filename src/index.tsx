@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from 'zenme-xie/App';
-import 'zenme-xie/index.scss';
+import 'bootstrap/scss/bootstrap.scss';
 import * as serviceWorker from 'zenme-xie/serviceWorker';
 
 ReactDOM.render(

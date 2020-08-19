@@ -4,19 +4,20 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import styles from 'zenme-xie/HanziCard.module.scss';
 import HanziGrid from 'zenme-xie/HanziGrid';
 import HanziSteps from 'zenme-xie/HanziSteps';
 
 export default function HanziCard({ character, index }: HanziCardProp) {
   return (
-    <Card className="hanzi-card">
+    <Card className={styles.hanziCard}>
       <Card.Body>
         <Card.Title>{index + 1}</Card.Title>
         <Card.Title>{character}</Card.Title>
         <Container>
           <Row className="justify-content-md-center">
             <Col lg={4} md={12}>
-              <div className="hanzi-animation">
+              <div className={styles.hanziGrid}>
                 {
                   <HanziGrid
                     character={character}

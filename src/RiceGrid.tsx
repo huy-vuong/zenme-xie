@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import styles from 'zenme-xie/RiceGrid.module.scss';
 
 export default function RiceGrid({ id, size = 300, className }: RiceGridProp) {
   const halfSize = size / 2;
@@ -16,7 +17,7 @@ export default function RiceGrid({ id, size = 300, className }: RiceGridProp) {
         y1="0"
         x2={size}
         y2={size}
-        className="rice-grid-guide"
+        className={styles.guideLine}
         data-testid="rice-grid-guide-nw-se"
       />
       <line
@@ -24,7 +25,7 @@ export default function RiceGrid({ id, size = 300, className }: RiceGridProp) {
         y1="0"
         x2="0"
         y2={size}
-        className="rice-grid-guide"
+        className={styles.guideLine}
         data-testid="rice-grid-guide-ne-sw"
       />
       <line
@@ -32,7 +33,7 @@ export default function RiceGrid({ id, size = 300, className }: RiceGridProp) {
         y1="0"
         x2={halfSize}
         y2={size}
-        className="rice-grid-guide"
+        className={styles.guideLine}
         data-testid="rice-grid-guide-nn-ss"
       />
       <line
@@ -40,7 +41,7 @@ export default function RiceGrid({ id, size = 300, className }: RiceGridProp) {
         y1={halfSize}
         x2={size}
         y2={halfSize}
-        className="rice-grid-guide"
+        className={styles.guideLine}
         data-testid="rice-grid-guide-ww-ee"
       />
       <line
@@ -48,7 +49,7 @@ export default function RiceGrid({ id, size = 300, className }: RiceGridProp) {
         y1="0"
         x2={size}
         y2="0"
-        className="rice-grid-border"
+        className={styles.borderLine}
         data-testid="rice-grid-border-nw-ne"
       />
       <line
@@ -56,7 +57,7 @@ export default function RiceGrid({ id, size = 300, className }: RiceGridProp) {
         y1="0"
         x2="0"
         y2={size}
-        className="rice-grid-border"
+        className={styles.borderLine}
         data-testid="rice-grid-border-nw-sw"
       />
       <line
@@ -64,7 +65,7 @@ export default function RiceGrid({ id, size = 300, className }: RiceGridProp) {
         y1="0"
         x2={size}
         y2={size}
-        className="rice-grid-border"
+        className={styles.borderLine}
         data-testid="rice-grid-border-ne-se"
       />
       <line
@@ -72,7 +73,7 @@ export default function RiceGrid({ id, size = 300, className }: RiceGridProp) {
         y1={size}
         x2={size}
         y2={size}
-        className="rice-grid-border"
+        className={styles.borderLine}
         data-testid="rice-grid-border-sw-se"
       />
     </svg>

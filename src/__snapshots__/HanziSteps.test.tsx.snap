@@ -3,7 +3,7 @@
 exports[`renders nothing given a non-Hanzi character 1`] = `
 <DocumentFragment>
   <div
-    class="hanzi-steps"
+    class="hanziSteps"
     id="test"
   />
 </DocumentFragment>
@@ -12,21 +12,21 @@ exports[`renders nothing given a non-Hanzi character 1`] = `
 exports[`renders steps for the given character 1`] = `
 <DocumentFragment>
   <div
-    class="hanzi-steps"
+    class="hanziSteps"
     id="test"
   >
     <span
       data-testid="test-stroke-0"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-0"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -34,7 +34,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -42,7 +42,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -50,7 +50,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -58,7 +58,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -66,7 +66,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -74,7 +74,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -82,7 +82,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -105,14 +105,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-1"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-1"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -120,7 +120,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -128,7 +128,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -136,7 +136,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -144,7 +144,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -152,7 +152,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -160,7 +160,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -168,7 +168,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -195,14 +195,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-2"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-2"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -210,7 +210,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -218,7 +218,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -226,7 +226,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -234,7 +234,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -242,7 +242,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -250,7 +250,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -258,7 +258,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -289,14 +289,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-3"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-3"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -304,7 +304,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -312,7 +312,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -320,7 +320,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -328,7 +328,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -336,7 +336,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -344,7 +344,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -352,7 +352,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -387,14 +387,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-4"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-4"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -402,7 +402,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -410,7 +410,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -418,7 +418,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -426,7 +426,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -434,7 +434,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -442,7 +442,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -450,7 +450,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -489,14 +489,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-5"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-5"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -504,7 +504,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -512,7 +512,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -520,7 +520,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -528,7 +528,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -536,7 +536,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -544,7 +544,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -552,7 +552,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -595,14 +595,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-6"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-6"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -610,7 +610,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -618,7 +618,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -626,7 +626,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -634,7 +634,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -642,7 +642,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -650,7 +650,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -658,7 +658,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -705,14 +705,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-7"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-7"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -720,7 +720,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -728,7 +728,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -736,7 +736,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -744,7 +744,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -752,7 +752,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -760,7 +760,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -768,7 +768,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -819,14 +819,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-8"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-8"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -834,7 +834,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -842,7 +842,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -850,7 +850,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -858,7 +858,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -866,7 +866,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -874,7 +874,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -882,7 +882,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -937,14 +937,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-9"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-9"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -952,7 +952,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -960,7 +960,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -968,7 +968,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -976,7 +976,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -984,7 +984,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -992,7 +992,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -1000,7 +1000,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -1059,14 +1059,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-10"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-10"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -1074,7 +1074,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -1082,7 +1082,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -1090,7 +1090,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -1098,7 +1098,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -1106,7 +1106,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -1114,7 +1114,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -1122,7 +1122,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -1185,14 +1185,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-11"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-11"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -1200,7 +1200,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -1208,7 +1208,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -1216,7 +1216,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -1224,7 +1224,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -1232,7 +1232,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -1240,7 +1240,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -1248,7 +1248,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -1315,14 +1315,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-12"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-12"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -1330,7 +1330,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -1338,7 +1338,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -1346,7 +1346,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -1354,7 +1354,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -1362,7 +1362,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -1370,7 +1370,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -1378,7 +1378,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -1449,14 +1449,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-13"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-13"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -1464,7 +1464,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -1472,7 +1472,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -1480,7 +1480,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -1488,7 +1488,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -1496,7 +1496,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -1504,7 +1504,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -1512,7 +1512,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -1587,14 +1587,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-14"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-14"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -1602,7 +1602,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -1610,7 +1610,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -1618,7 +1618,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -1626,7 +1626,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -1634,7 +1634,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -1642,7 +1642,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -1650,7 +1650,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -1729,14 +1729,14 @@ exports[`renders steps for the given character 1`] = `
       data-testid="test-stroke-15"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-15"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -1744,7 +1744,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -1752,7 +1752,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -1760,7 +1760,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -1768,7 +1768,7 @@ exports[`renders steps for the given character 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -1776,7 +1776,7 @@ exports[`renders steps for the given character 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -1784,7 +1784,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -1792,7 +1792,7 @@ exports[`renders steps for the given character 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -1878,21 +1878,21 @@ exports[`renders steps for the given character 1`] = `
 exports[`renders steps only for the first of the given characters 1`] = `
 <DocumentFragment>
   <div
-    class="hanzi-steps"
+    class="hanziSteps"
     id="test"
   >
     <span
       data-testid="test-stroke-0"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-0"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -1900,7 +1900,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -1908,7 +1908,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -1916,7 +1916,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -1924,7 +1924,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -1932,7 +1932,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -1940,7 +1940,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -1948,7 +1948,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -1971,14 +1971,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-1"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-1"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -1986,7 +1986,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -1994,7 +1994,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -2002,7 +2002,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -2010,7 +2010,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -2018,7 +2018,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -2026,7 +2026,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -2034,7 +2034,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -2061,14 +2061,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-2"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-2"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -2076,7 +2076,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -2084,7 +2084,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -2092,7 +2092,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -2100,7 +2100,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -2108,7 +2108,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -2116,7 +2116,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -2124,7 +2124,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -2155,14 +2155,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-3"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-3"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -2170,7 +2170,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -2178,7 +2178,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -2186,7 +2186,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -2194,7 +2194,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -2202,7 +2202,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -2210,7 +2210,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -2218,7 +2218,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -2253,14 +2253,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-4"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-4"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -2268,7 +2268,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -2276,7 +2276,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -2284,7 +2284,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -2292,7 +2292,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -2300,7 +2300,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -2308,7 +2308,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -2316,7 +2316,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -2355,14 +2355,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-5"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-5"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -2370,7 +2370,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -2378,7 +2378,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -2386,7 +2386,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -2394,7 +2394,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -2402,7 +2402,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -2410,7 +2410,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -2418,7 +2418,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -2461,14 +2461,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-6"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-6"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -2476,7 +2476,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -2484,7 +2484,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -2492,7 +2492,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -2500,7 +2500,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -2508,7 +2508,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -2516,7 +2516,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -2524,7 +2524,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -2571,14 +2571,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-7"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-7"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -2586,7 +2586,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -2594,7 +2594,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -2602,7 +2602,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -2610,7 +2610,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -2618,7 +2618,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -2626,7 +2626,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -2634,7 +2634,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -2685,14 +2685,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-8"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-8"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -2700,7 +2700,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -2708,7 +2708,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -2716,7 +2716,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -2724,7 +2724,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -2732,7 +2732,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -2740,7 +2740,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -2748,7 +2748,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -2803,14 +2803,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-9"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-9"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -2818,7 +2818,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -2826,7 +2826,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -2834,7 +2834,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -2842,7 +2842,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -2850,7 +2850,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -2858,7 +2858,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -2866,7 +2866,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -2925,14 +2925,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-10"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-10"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -2940,7 +2940,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -2948,7 +2948,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -2956,7 +2956,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -2964,7 +2964,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -2972,7 +2972,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -2980,7 +2980,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -2988,7 +2988,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -3051,14 +3051,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-11"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-11"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -3066,7 +3066,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -3074,7 +3074,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -3082,7 +3082,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -3090,7 +3090,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -3098,7 +3098,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -3106,7 +3106,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -3114,7 +3114,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -3181,14 +3181,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-12"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-12"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -3196,7 +3196,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -3204,7 +3204,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -3212,7 +3212,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -3220,7 +3220,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -3228,7 +3228,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -3236,7 +3236,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -3244,7 +3244,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -3315,14 +3315,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-13"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-13"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -3330,7 +3330,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -3338,7 +3338,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -3346,7 +3346,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -3354,7 +3354,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -3362,7 +3362,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -3370,7 +3370,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -3378,7 +3378,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -3453,14 +3453,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-14"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-14"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -3468,7 +3468,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -3476,7 +3476,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -3484,7 +3484,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -3492,7 +3492,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -3500,7 +3500,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -3508,7 +3508,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -3516,7 +3516,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"
@@ -3595,14 +3595,14 @@ exports[`renders steps only for the first of the given characters 1`] = `
       data-testid="test-stroke-15"
     >
       <svg
-        class="hanzi-step"
+        class="hanziStep"
         height="94"
         id="test-stroke-15"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nw-se"
           x1="0"
           x2="94"
@@ -3610,7 +3610,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ne-sw"
           x1="94"
           x2="0"
@@ -3618,7 +3618,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-nn-ss"
           x1="47"
           x2="47"
@@ -3626,7 +3626,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-guide"
+          class="guideLine"
           data-testid="rice-grid-guide-ww-ee"
           x1="0"
           x2="94"
@@ -3634,7 +3634,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="47"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-ne"
           x1="0"
           x2="94"
@@ -3642,7 +3642,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="0"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-nw-sw"
           x1="0"
           x2="0"
@@ -3650,7 +3650,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-ne-se"
           x1="94"
           x2="94"
@@ -3658,7 +3658,7 @@ exports[`renders steps only for the first of the given characters 1`] = `
           y2="94"
         />
         <line
-          class="rice-grid-border"
+          class="borderLine"
           data-testid="rice-grid-border-sw-se"
           x1="0"
           x2="94"

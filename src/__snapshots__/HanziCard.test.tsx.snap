@@ -3,7 +3,7 @@
 exports[`renders a card containing the character in a rice grid 1`] = `
 <DocumentFragment>
   <div
-    class="hanzi-card card"
+    class="hanziCard card"
   >
     <div
       class="card-body"
@@ -28,7 +28,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
             class="col-lg-4 col-md-12"
           >
             <div
-              class="hanzi-animation"
+              class="hanziGrid"
             >
               <svg
                 height="300"
@@ -37,7 +37,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <line
-                  class="rice-grid-guide"
+                  class="guideLine"
                   data-testid="rice-grid-guide-nw-se"
                   x1="0"
                   x2="300"
@@ -45,7 +45,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                   y2="300"
                 />
                 <line
-                  class="rice-grid-guide"
+                  class="guideLine"
                   data-testid="rice-grid-guide-ne-sw"
                   x1="300"
                   x2="0"
@@ -53,7 +53,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                   y2="300"
                 />
                 <line
-                  class="rice-grid-guide"
+                  class="guideLine"
                   data-testid="rice-grid-guide-nn-ss"
                   x1="150"
                   x2="150"
@@ -61,7 +61,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                   y2="300"
                 />
                 <line
-                  class="rice-grid-guide"
+                  class="guideLine"
                   data-testid="rice-grid-guide-ww-ee"
                   x1="0"
                   x2="300"
@@ -69,7 +69,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                   y2="150"
                 />
                 <line
-                  class="rice-grid-border"
+                  class="borderLine"
                   data-testid="rice-grid-border-nw-ne"
                   x1="0"
                   x2="300"
@@ -77,7 +77,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                   y2="0"
                 />
                 <line
-                  class="rice-grid-border"
+                  class="borderLine"
                   data-testid="rice-grid-border-nw-sw"
                   x1="0"
                   x2="0"
@@ -85,7 +85,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                   y2="300"
                 />
                 <line
-                  class="rice-grid-border"
+                  class="borderLine"
                   data-testid="rice-grid-border-ne-se"
                   x1="300"
                   x2="300"
@@ -93,7 +93,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                   y2="300"
                 />
                 <line
-                  class="rice-grid-border"
+                  class="borderLine"
                   data-testid="rice-grid-border-sw-se"
                   x1="0"
                   x2="300"
@@ -113,7 +113,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
               <br />
             </div>
             <div
-              class="hanzi-steps"
+              class="hanziSteps"
               id="hanzi-steps-0-35987"
             />
           </div>

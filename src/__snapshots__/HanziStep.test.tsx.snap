@@ -3,14 +3,14 @@
 exports[`renders an empty rice grid given no character data 1`] = `
 <DocumentFragment>
   <svg
-    class="hanzi-step"
+    class="hanziStep"
     height="94"
     id="test"
     width="94"
     xmlns="http://www.w3.org/2000/svg"
   >
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-nw-se"
       x1="0"
       x2="94"
@@ -18,7 +18,7 @@ exports[`renders an empty rice grid given no character data 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-ne-sw"
       x1="94"
       x2="0"
@@ -26,7 +26,7 @@ exports[`renders an empty rice grid given no character data 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-nn-ss"
       x1="47"
       x2="47"
@@ -34,7 +34,7 @@ exports[`renders an empty rice grid given no character data 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-ww-ee"
       x1="0"
       x2="94"
@@ -42,7 +42,7 @@ exports[`renders an empty rice grid given no character data 1`] = `
       y2="47"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-nw-ne"
       x1="0"
       x2="94"
@@ -50,7 +50,7 @@ exports[`renders an empty rice grid given no character data 1`] = `
       y2="0"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-nw-sw"
       x1="0"
       x2="0"
@@ -58,7 +58,7 @@ exports[`renders an empty rice grid given no character data 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-ne-se"
       x1="94"
       x2="94"
@@ -66,7 +66,7 @@ exports[`renders an empty rice grid given no character data 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-sw-se"
       x1="0"
       x2="94"
@@ -85,14 +85,14 @@ exports[`renders an empty rice grid given no character data 1`] = `
 exports[`renders the active stroke a different color 1`] = `
 <DocumentFragment>
   <svg
-    class="hanzi-step"
+    class="hanziStep"
     height="94"
     id="test"
     width="94"
     xmlns="http://www.w3.org/2000/svg"
   >
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-nw-se"
       x1="0"
       x2="94"
@@ -100,7 +100,7 @@ exports[`renders the active stroke a different color 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-ne-sw"
       x1="94"
       x2="0"
@@ -108,7 +108,7 @@ exports[`renders the active stroke a different color 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-nn-ss"
       x1="47"
       x2="47"
@@ -116,7 +116,7 @@ exports[`renders the active stroke a different color 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-ww-ee"
       x1="0"
       x2="94"
@@ -124,7 +124,7 @@ exports[`renders the active stroke a different color 1`] = `
       y2="47"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-nw-ne"
       x1="0"
       x2="94"
@@ -132,7 +132,7 @@ exports[`renders the active stroke a different color 1`] = `
       y2="0"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-nw-sw"
       x1="0"
       x2="0"
@@ -140,7 +140,7 @@ exports[`renders the active stroke a different color 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-ne-se"
       x1="94"
       x2="94"
@@ -148,7 +148,7 @@ exports[`renders the active stroke a different color 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-sw-se"
       x1="0"
       x2="94"
@@ -180,14 +180,14 @@ exports[`renders the active stroke a different color 1`] = `
 exports[`renders up to the stroke index given Hanzi character data 1`] = `
 <DocumentFragment>
   <svg
-    class="hanzi-step"
+    class="hanziStep"
     height="94"
     id="test"
     width="94"
     xmlns="http://www.w3.org/2000/svg"
   >
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-nw-se"
       x1="0"
       x2="94"
@@ -195,7 +195,7 @@ exports[`renders up to the stroke index given Hanzi character data 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-ne-sw"
       x1="94"
       x2="0"
@@ -203,7 +203,7 @@ exports[`renders up to the stroke index given Hanzi character data 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-nn-ss"
       x1="47"
       x2="47"
@@ -211,7 +211,7 @@ exports[`renders up to the stroke index given Hanzi character data 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-ww-ee"
       x1="0"
       x2="94"
@@ -219,7 +219,7 @@ exports[`renders up to the stroke index given Hanzi character data 1`] = `
       y2="47"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-nw-ne"
       x1="0"
       x2="94"
@@ -227,7 +227,7 @@ exports[`renders up to the stroke index given Hanzi character data 1`] = `
       y2="0"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-nw-sw"
       x1="0"
       x2="0"
@@ -235,7 +235,7 @@ exports[`renders up to the stroke index given Hanzi character data 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-ne-se"
       x1="94"
       x2="94"
@@ -243,7 +243,7 @@ exports[`renders up to the stroke index given Hanzi character data 1`] = `
       y2="94"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-sw-se"
       x1="0"
       x2="94"

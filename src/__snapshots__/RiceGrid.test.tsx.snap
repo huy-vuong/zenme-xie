@@ -9,7 +9,7 @@ exports[`renders the lines for the rice grid 1`] = `
     xmlns="http://www.w3.org/2000/svg"
   >
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-nw-se"
       x1="0"
       x2="300"
@@ -17,7 +17,7 @@ exports[`renders the lines for the rice grid 1`] = `
       y2="300"
     />
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-ne-sw"
       x1="300"
       x2="0"
@@ -25,7 +25,7 @@ exports[`renders the lines for the rice grid 1`] = `
       y2="300"
     />
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-nn-ss"
       x1="150"
       x2="150"
@@ -33,7 +33,7 @@ exports[`renders the lines for the rice grid 1`] = `
       y2="300"
     />
     <line
-      class="rice-grid-guide"
+      class="guideLine"
       data-testid="rice-grid-guide-ww-ee"
       x1="0"
       x2="300"
@@ -41,7 +41,7 @@ exports[`renders the lines for the rice grid 1`] = `
       y2="150"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-nw-ne"
       x1="0"
       x2="300"
@@ -49,7 +49,7 @@ exports[`renders the lines for the rice grid 1`] = `
       y2="0"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-nw-sw"
       x1="0"
       x2="0"
@@ -57,7 +57,7 @@ exports[`renders the lines for the rice grid 1`] = `
       y2="300"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-ne-se"
       x1="300"
       x2="300"
@@ -65,7 +65,7 @@ exports[`renders the lines for the rice grid 1`] = `
       y2="300"
     />
     <line
-      class="rice-grid-border"
+      class="borderLine"
       data-testid="rice-grid-border-sw-se"
       x1="0"
       x2="300"
