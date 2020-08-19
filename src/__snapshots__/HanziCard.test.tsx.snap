@@ -25,7 +25,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
           class="justify-content-md-center row"
         >
           <div
-            class="col"
+            class="col-lg-4 col-md-12"
           >
             <div
               class="hanzi-animation"
@@ -103,6 +103,19 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <defs />
               </svg>
             </div>
+          </div>
+          <div
+            class="col-lg-8 col-md-12"
+          >
+            <div
+              class="d-xl-none d-lg-none"
+            >
+              <br />
+            </div>
+            <div
+              class="hanzi-steps"
+              id="hanzi-steps-0-35987"
+            />
           </div>
         </div>
       </div>

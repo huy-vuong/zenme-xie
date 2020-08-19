@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import HanziGrid from 'zenme-xie/HanziGrid';
+import HanziSteps from 'zenme-xie/HanziSteps';
 
 export default function HanziCard({ character, index }: HanziCardProp) {
   return (
@@ -14,7 +15,7 @@ export default function HanziCard({ character, index }: HanziCardProp) {
         <Card.Title>{character}</Card.Title>
         <Container>
           <Row className="justify-content-md-center">
-            <Col>
+            <Col lg={4} md={12}>
               <div className="hanzi-animation">
                 {
                   <HanziGrid
@@ -26,6 +27,16 @@ export default function HanziCard({ character, index }: HanziCardProp) {
                   />
                 }
               </div>
+            </Col>
+            <Col lg={8} md={12}>
+              <div className="d-xl-none d-lg-none">
+                <br />
+              </div>
+              <HanziSteps
+                character={character}
+                id={`hanzi-steps-${index}-${character.charCodeAt(0)}`}
+                activeStrokeColor="#dc3545"
+              />
             </Col>
           </Row>
         </Container>
