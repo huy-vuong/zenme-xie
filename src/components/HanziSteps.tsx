@@ -1,8 +1,8 @@
 import HanziWriter from 'hanzi-writer';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
-import HanziStep from 'zenme-xie/HanziStep';
-import styles from 'zenme-xie/HanziSteps.module.scss';
+import HanziStep from 'zenme-xie/components/HanziStep';
+import styles from 'zenme-xie/components/HanziSteps.module.scss';
 import CharacterData from 'zenme-xie/types/CharacterData';
 
 export default function HanziSteps({ character, id }: HanziStepsProp) {

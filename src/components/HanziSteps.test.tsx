@@ -1,6 +1,6 @@
 import { render, waitFor } from '@testing-library/react';
 import React from 'react';
-import HanziSteps from 'zenme-xie/HanziSteps';
+import HanziSteps from 'zenme-xie/components/HanziSteps';
 
 test('renders steps for the given character', async () => {
   const { container, getByTestId, asFragment } = render(

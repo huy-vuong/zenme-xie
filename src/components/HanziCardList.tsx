@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import HanziCard from 'zenme-xie/HanziCard';
+import HanziCard from 'zenme-xie/components/HanziCard';
 
 export default function HanziCardList({ text }: HanziCardListProp) {
   return (

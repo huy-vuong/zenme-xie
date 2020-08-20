@@ -4,9 +4,9 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import styles from 'zenme-xie/HanziCard.module.scss';
-import HanziGrid from 'zenme-xie/HanziGrid';
-import HanziSteps from 'zenme-xie/HanziSteps';
+import styles from 'zenme-xie/components/HanziCard.module.scss';
+import HanziGrid from 'zenme-xie/components/HanziGrid';
+import HanziSteps from 'zenme-xie/components/HanziSteps';
 
 export default function HanziCard({ character, index }: HanziCardProp) {
   return (

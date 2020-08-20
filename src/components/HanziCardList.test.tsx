@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-import HanziCardList from 'zenme-xie/HanziCardList';
+import HanziCardList from 'zenme-xie/components/HanziCardList';
 
 test('renders nothing given empty text', async () => {
   const { asFragment } = render(<HanziCardList text="" />);

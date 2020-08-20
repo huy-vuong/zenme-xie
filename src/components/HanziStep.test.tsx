@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-import HanziStep from 'zenme-xie/HanziStep';
+import HanziStep from 'zenme-xie/components/HanziStep';
 
 test('renders up to the stroke index given Hanzi character data', () => {
   const strokeIndex = 1;

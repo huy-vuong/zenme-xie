@@ -1,7 +1,7 @@
 import HanziWriter from 'hanzi-writer';
 import PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
-import RiceGrid from 'zenme-xie/RiceGrid';
+import RiceGrid from 'zenme-xie/components/RiceGrid';
 
 export default function HanziGrid({
   character,

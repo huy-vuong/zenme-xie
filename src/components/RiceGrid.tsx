@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import styles from 'zenme-xie/RiceGrid.module.scss';
+import styles from 'zenme-xie/components/RiceGrid.module.scss';
 
 export default function RiceGrid({ id, size = 300, className }: RiceGridProp) {
   const halfSize = size / 2;

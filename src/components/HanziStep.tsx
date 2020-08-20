@@ -1,9 +1,9 @@
 import HanziWriter from 'hanzi-writer';
 import PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
-import RiceGrid from 'zenme-xie/RiceGrid';
+import RiceGrid from 'zenme-xie/components/RiceGrid';
+import styles from 'zenme-xie/components/HanziStep.module.scss';
 import CharacterData from 'zenme-xie/types/CharacterData';
-import styles from 'zenme-xie/HanziStep.module.scss';
 
 export default function HanziStep({
   characterData,

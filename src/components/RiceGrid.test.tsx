@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-import RiceGrid from 'zenme-xie/RiceGrid';
+import RiceGrid from 'zenme-xie/components/RiceGrid';
 
 test('renders the lines for the rice grid', () => {
   const { getByTestId, asFragment } = render(<RiceGrid id="test" />);
