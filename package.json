@@ -21,7 +21,7 @@
     "react-bootstrap": "^1.3.0",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.2",
-    "typescript": "^3.9.7"
+    "typescript": "^4.0.2"
   },
   "devDependencies": {
     "@sheerun/mutationobserver-shim": "^0.3.3",
