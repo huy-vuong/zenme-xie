@@ -19,7 +19,7 @@ export default function HanziCard({ character, index }: HanziCardProp) {
     // TODO Also block the call if the given character is not a Hanzi character.
     if (!characterDictionaryEntry) {
       axios
-        .get(`/characters/${character.charCodeAt(0)}.json`)
+        .get(`characters/${character.charCodeAt(0)}.json`)
         .then((response) => {
           try {
             setCharacterDictionaryEntry(response.data);
