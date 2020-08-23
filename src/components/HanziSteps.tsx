@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import HanziStep from 'zenme-xie/components/HanziStep';
 import styles from 'zenme-xie/components/HanziSteps.module.scss';
-import CharacterData from 'zenme-xie/types/CharacterData';
+import HanziGraphicsEntry from 'zenme-xie/types/HanziGraphicsEntry';
 
 export default function HanziSteps({ character, id }: HanziStepsProp) {
-  const [characterData, setCharacterData] = useState<CharacterData | null>(
+  const [characterData, setCharacterData] = useState<HanziGraphicsEntry | null>(
     null
   );
   useEffect(() => {
     if (!characterData) {
       HanziWriter.loadCharacterData(character[0]).then(
-        (loadedCharacterData: CharacterData) => {
+        (loadedCharacterData: HanziGraphicsEntry) => {
           setCharacterData(loadedCharacterData);
         }
       );

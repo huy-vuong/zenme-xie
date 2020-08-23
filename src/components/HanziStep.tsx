@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
 import RiceGrid from 'zenme-xie/components/RiceGrid';
 import styles from 'zenme-xie/components/HanziStep.module.scss';
-import CharacterData from 'zenme-xie/types/CharacterData';
+import HanziGraphicsEntry from 'zenme-xie/types/HanziGraphicsEntry';
 
 export default function HanziStep({
   characterData,
@@ -45,7 +45,7 @@ export default function HanziStep({
 }
 
 interface HanziStepProp {
-  characterData: CharacterData;
+  characterData: HanziGraphicsEntry;
   strokeIndex: number;
   id: string;
   size?: number;

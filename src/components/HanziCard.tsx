@@ -9,6 +9,7 @@ import styles from 'zenme-xie/components/HanziCard.module.scss';
 import HanziGrid from 'zenme-xie/components/HanziGrid';
 import HanziSteps from 'zenme-xie/components/HanziSteps';
 import HanziDictionaryEntry from 'zenme-xie/types/HanziDictionaryEntry';
+import { isHanzi } from 'zenme-xie/utils/hanzi';
 
 export default function HanziCard({ character, index }: HanziCardProp) {
   const [
@@ -16,8 +17,7 @@ export default function HanziCard({ character, index }: HanziCardProp) {
     setCharacterDictionaryEntry,
   ] = useState<HanziDictionaryEntry | null>(null);
   useEffect(() => {
-    // TODO Also block the call if the given character is not a Hanzi character.
-    if (!characterDictionaryEntry) {
+    if (!characterDictionaryEntry && isHanzi(character)) {
       axios
         .get(`characters/${character.charCodeAt(0)}.json`)
         .then((response) => {
