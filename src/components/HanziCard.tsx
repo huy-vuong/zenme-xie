@@ -1,15 +1,16 @@
 import axios from 'axios';
 import PropTypes from 'prop-types';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import styles from 'zenme-xie/components/HanziCard.module.scss';
+import HanziDefinition from 'zenme-xie/components/HanziDefinition';
 import HanziGrid from 'zenme-xie/components/HanziGrid';
 import HanziSteps from 'zenme-xie/components/HanziSteps';
+import PinyinList from 'zenme-xie/components/PinyinList';
 import HanziDictionaryEntry from 'zenme-xie/types/HanziDictionaryEntry';
-import { isHanzi } from 'zenme-xie/utils/hanzi';
 
 export default function HanziCard({ character, index }: HanziCardProp) {
   const [
@@ -17,9 +18,10 @@ export default function HanziCard({ character, index }: HanziCardProp) {
     setCharacterDictionaryEntry,
   ] = useState<HanziDictionaryEntry | null>(null);
   useEffect(() => {
-    if (!characterDictionaryEntry && isHanzi(character)) {
+    // TODO Also block the call if the given character is not a Hanzi character.
+    if (!characterDictionaryEntry) {
       axios
-        .get(`characters/${character.charCodeAt(0)}.json`)
+        .get(`/characters/${character.charCodeAt(0)}.json`)
         .then((response) => {
           try {
             setCharacterDictionaryEntry(response.data);
@@ -52,24 +54,14 @@ export default function HanziCard({ character, index }: HanziCardProp) {
                 }
               </div>
               {characterDictionaryEntry?.pinyin ? <br /> : null}
-              <div className={styles.pinyinList}>
-                {characterDictionaryEntry?.pinyin?.map(
-                  (pinyin, pinyinIndex) => (
-                    <code
-                      className={styles.pinyin}
-                      key={`hanzi-grid-${index}-${character.charCodeAt(
-                        0
-                      )}-${pinyinIndex}`}
-                    >
-                      {pinyin}
-                    </code>
-                  )
-                )}
-              </div>
+              <PinyinList
+                id={`hanzi-grid-${index}-${character.charCodeAt(0)}`}
+                pinyinList={characterDictionaryEntry?.pinyin}
+              />
               {characterDictionaryEntry?.definition ? <br /> : null}
-              <div className={styles.definition}>
-                {characterDictionaryEntry?.definition}
-              </div>
+              <HanziDefinition
+                definition={characterDictionaryEntry?.definition}
+              />
             </Col>
             <Col lg={8} md={12}>
               <div className="d-xl-none d-lg-none">
