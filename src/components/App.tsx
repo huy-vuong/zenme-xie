@@ -48,7 +48,10 @@ export default function App() {
               .reduce(
                 (accumulator, currentValue) =>
                   currentValue
-                    ? accumulator.set(currentValue.character, currentValue)
+                    ? new Map(accumulator).set(
+                        currentValue.character,
+                        currentValue
+                      )
                     : accumulator,
                 dictionary
               )
