@@ -19,9 +19,9 @@ export default function HanziSteps({ character, id }: HanziStepsProp) {
       );
     }
   });
-  return characterData ? (
+  return (
     <div id={id} className={styles.hanziSteps}>
-      {characterData.strokes.map((_stroke, index) => (
+      {characterData?.strokes.map((_stroke, index) => (
         <span
           key={`${id}-stroke-${index}`}
           data-testid={`${id}-stroke-${index}`}
@@ -35,8 +35,6 @@ export default function HanziSteps({ character, id }: HanziStepsProp) {
         </span>
       ))}
     </div>
-  ) : (
-    <div id={id} className={styles.hanziSteps} />
   );
 }
 
