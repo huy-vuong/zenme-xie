@@ -1,7 +1,8 @@
 import HanziWriter from 'hanzi-writer';
 import PropTypes from 'prop-types';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import RiceGrid from 'zenme-xie/components/RiceGrid';
+import { isHanzi } from 'zenme-xie/utils/hanzi';
 
 export default function HanziGrid({
   character,
@@ -15,15 +16,10 @@ export default function HanziGrid({
   outlineColor = '#cccccc',
   animateOnClick = false,
 }: HanziGridProp) {
-  function isHanzi(char: string) {
-    return Boolean(
-      char.match(
-        /^([\u4E00-\u9FCC\u3400-\u4DB5\uFA0E\uFA0F\uFA11\uFA13\uFA14\uFA1F\uFA21\uFA23\uFA24\uFA27-\uFA29]|[\ud840-\ud868][\udc00-\udfff]|\ud869[\udc00-\uded6\udf00-\udfff]|[\ud86a-\ud86c][\udc00-\udfff]|\ud86d[\udc00-\udf34\udf40-\udfff]|\ud86e[\udc00-\udc1d])+$/g
-      )
-    );
-  }
+  const [strokeRenderStarted, setStrokeRenderStarted] = useState(false);
   useEffect(() => {
-    if (isHanzi(character)) {
+    if (!strokeRenderStarted && isHanzi(character)) {
+      setStrokeRenderStarted(true);
       const writer = HanziWriter.create(id, character, {
         width: size,
         height: size,
@@ -38,7 +34,17 @@ export default function HanziGrid({
         });
       }
     }
-  });
+  }, [
+    strokeRenderStarted,
+    character,
+    id,
+    size,
+    delayBetweenStrokes,
+    strokeColor,
+    radicalColor,
+    outlineColor,
+    animateOnClick,
+  ]);
   return <RiceGrid id={id} />;
 }
 
