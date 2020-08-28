@@ -1,6 +1,6 @@
 import HanziWriter from 'hanzi-writer';
 import PropTypes from 'prop-types';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import RiceGrid from 'zenme-xie/components/RiceGrid';
 import { isHanzi } from 'zenme-xie/utils/hanzi';
 
@@ -16,8 +16,10 @@ export default function HanziGrid({
   outlineColor = '#cccccc',
   animateOnClick = false,
 }: HanziGridProp) {
+  const [strokeRenderStarted, setStrokeRenderStarted] = useState(false);
   useEffect(() => {
-    if (isHanzi(character)) {
+    if (!strokeRenderStarted && isHanzi(character)) {
+      setStrokeRenderStarted(true);
       const writer = HanziWriter.create(id, character, {
         width: size,
         height: size,
@@ -32,7 +34,17 @@ export default function HanziGrid({
         });
       }
     }
-  });
+  }, [
+    strokeRenderStarted,
+    character,
+    id,
+    size,
+    delayBetweenStrokes,
+    strokeColor,
+    radicalColor,
+    outlineColor,
+    animateOnClick,
+  ]);
   return <RiceGrid id={id} />;
 }
 

@@ -1,6 +1,6 @@
 import HanziWriter from 'hanzi-writer';
 import PropTypes from 'prop-types';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import RiceGrid from 'zenme-xie/components/RiceGrid';
 import styles from 'zenme-xie/components/HanziStep.module.scss';
 import HanziGraphicsEntry from 'zenme-xie/types/HanziGraphicsEntry';
@@ -14,26 +14,36 @@ export default function HanziStep({
   strokeColor = '#555555',
   activeStrokeColor,
 }: HanziStepProp) {
+  const [strokeRenderStarted, setStrokeRenderStarted] = useState(false);
   useEffect(() => {
     function renderFanningStrokes(target: HTMLElement, strokes: Array<string>) {
-      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-      target.appendChild(svg);
-      const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-      const transformData = HanziWriter.getScalingTransform(size, size);
-      group.setAttributeNS(null, 'transform', transformData.transform);
-      svg.appendChild(group);
-      strokes.forEach((strokePath: string, index: number) => {
-        const path = document.createElementNS(
+      if (!strokeRenderStarted) {
+        setStrokeRenderStarted(true);
+        const svg = document.createElementNS(
           'http://www.w3.org/2000/svg',
-          'path'
+          'svg'
         );
-        path.setAttributeNS(null, 'd', strokePath);
-        path.style.fill =
-          activeStrokeColor && index === strokeIndex
-            ? activeStrokeColor
-            : strokeColor;
-        group.appendChild(path);
-      });
+        target.appendChild(svg);
+        const group = document.createElementNS(
+          'http://www.w3.org/2000/svg',
+          'g'
+        );
+        const transformData = HanziWriter.getScalingTransform(size, size);
+        group.setAttributeNS(null, 'transform', transformData.transform);
+        svg.appendChild(group);
+        strokes.forEach((strokePath: string, index: number) => {
+          const path = document.createElementNS(
+            'http://www.w3.org/2000/svg',
+            'path'
+          );
+          path.setAttributeNS(null, 'd', strokePath);
+          path.style.fill =
+            activeStrokeColor && index === strokeIndex
+              ? activeStrokeColor
+              : strokeColor;
+          group.appendChild(path);
+        });
+      }
     }
 
     renderFanningStrokes(

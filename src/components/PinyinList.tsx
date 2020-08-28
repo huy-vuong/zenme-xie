@@ -6,7 +6,11 @@ export default function PinyinList({ id, pinyinList }: PinyinListProp) {
   return (
     <div className={styles.pinyinList}>
       {pinyinList?.map((pinyin, pinyinIndex) => (
-        <code id={id} className={styles.pinyin} key={`${id}-${pinyinIndex}`}>
+        <code
+          id={`${id}-${pinyinIndex}`}
+          className={styles.pinyin}
+          key={`${id}-${pinyinIndex}`}
+        >
           {pinyin}
         </code>
       ))}

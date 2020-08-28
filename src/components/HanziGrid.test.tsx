@@ -1,10 +1,7 @@
 import { render, waitFor } from '@testing-library/react';
 import React from 'react';
 import HanziGrid from 'zenme-xie/components/HanziGrid';
-
-async function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
+import { sleep } from 'zenme-xie/utils/test';
 
 test('renders the Hanzi strokes for a Hanzi character', async () => {
   const { container, asFragment } = render(

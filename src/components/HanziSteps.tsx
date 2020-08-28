@@ -4,13 +4,14 @@ import React, { useEffect, useState } from 'react';
 import HanziStep from 'zenme-xie/components/HanziStep';
 import styles from 'zenme-xie/components/HanziSteps.module.scss';
 import HanziGraphicsEntry from 'zenme-xie/types/HanziGraphicsEntry';
+import { isHanzi } from 'zenme-xie/utils/hanzi';
 
 export default function HanziSteps({ character, id }: HanziStepsProp) {
   const [characterData, setCharacterData] = useState<HanziGraphicsEntry | null>(
     null
   );
   useEffect(() => {
-    if (!characterData) {
+    if (!characterData && isHanzi(character)) {
       HanziWriter.loadCharacterData(character[0]).then(
         (loadedCharacterData: HanziGraphicsEntry) => {
           setCharacterData(loadedCharacterData);

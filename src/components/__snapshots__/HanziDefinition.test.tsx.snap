@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders nothing given no pinyin 1`] = `
+<DocumentFragment>
+  <div
+    class="definition"
+  />
+</DocumentFragment>
+`;
+
+exports[`renders the given definition 1`] = `
+<DocumentFragment>
+  <div
+    class="definition"
+  >
+    kittykat
+  </div>
+</DocumentFragment>
+`;

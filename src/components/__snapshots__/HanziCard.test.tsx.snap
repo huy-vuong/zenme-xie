@@ -103,6 +103,12 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <defs />
               </svg>
             </div>
+            <div
+              class="pinyinList"
+            />
+            <div
+              class="definition"
+            />
           </div>
           <div
             class="col-lg-8 col-md-12"

@@ -2,12 +2,12 @@ import { render, fireEvent } from '@testing-library/react';
 import React from 'react';
 import App from 'zenme-xie/components/App';
 
-test('renders app title', () => {
+test('renders app title', async () => {
   const { getByText } = render(<App />);
   expect(getByText('怎麼寫')).toBeInTheDocument();
 });
 
-test('renders cards based on the given text', () => {
+test('renders cards based on the given text', async () => {
   const { getByPlaceholderText, getByText, queryByText } = render(<App />);
   const textInput = getByPlaceholderText('你想寫什麼？');
   expect(textInput).toHaveDisplayValue('貓咪喵喵叫');
