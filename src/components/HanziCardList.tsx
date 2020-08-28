@@ -5,7 +5,7 @@ import HanziDictionaryEntry from 'zenme-xie/types/HanziDictionaryEntry';
 
 export default function HanziCardList({ text, dictionary }: HanziCardListProp) {
   return (
-    <div>
+    <>
       {text.split('').map((character, index) => (
         <div
           data-testid={`hanzi-card-${index}-${character.charCodeAt(0)}`}
@@ -18,7 +18,7 @@ export default function HanziCardList({ text, dictionary }: HanziCardListProp) {
           />
         </div>
       ))}
-    </div>
+    </>
   );
 }
 

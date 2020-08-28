@@ -75,12 +75,10 @@ export default function App() {
       <Container>
         <Row>
           <Col>
-            <div>
-              <Navbar bg="danger">
-                <Navbar.Brand>Zěnme Xiě</Navbar.Brand>
-              </Navbar>
-              {<HanziCardList text={text} dictionary={dictionary} />}
-            </div>
+            <Navbar bg="danger">
+              <Navbar.Brand>Zěnme Xiě</Navbar.Brand>
+            </Navbar>
+            {<HanziCardList text={text} dictionary={dictionary} />}
           </Col>
         </Row>
       </Container>
