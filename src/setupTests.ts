@@ -4,10 +4,5 @@
 // learn more: https://github.com/testing-library/jest-dom
 import MutationObserver from '@sheerun/mutationobserver-shim';
 import '@testing-library/jest-dom/extend-expect';
-import { server } from 'zenme-xie/mocks/server';
 
 window.MutationObserver = MutationObserver;
-
-beforeAll(() => server.listen());
-afterEach(() => server.resetHandlers());
-afterAll(() => server.close());
