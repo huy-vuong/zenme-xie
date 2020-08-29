@@ -20,7 +20,7 @@ export default function App() {
     if (prevText !== text) {
       setPrevText(text);
       const newCharacters = _.uniq(Array.from(text)).filter(
-        (character) => !Object.keys(dictionary).includes(character)
+        (character) => !dictionary.has(character)
       );
       if (newCharacters.length > 0) {
         newCharacters.forEach((character) => {
