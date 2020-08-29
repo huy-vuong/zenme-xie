@@ -1,7 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders nothing given empty text 1`] = `
-<DocumentFragment>
-  <div />
-</DocumentFragment>
-`;
+exports[`renders nothing given empty text 1`] = `<DocumentFragment />`;
