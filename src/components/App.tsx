@@ -20,27 +20,22 @@ export default function App() {
     if (prevText !== text) {
       setPrevText(text);
       const newCharacters = _.uniq(Array.from(text)).filter(
-        (character) => !dictionary.has(character)
+        (character) => !dictionary.has(character) && isHanzi(character)
       );
       if (newCharacters.length > 0) {
         newCharacters.forEach((character) => {
           setDictionary(dictionary.set(character, null));
         });
         Promise.all(
-          newCharacters.map((character) => {
-            if (isHanzi(character)) {
-              return axios
-                .get(`characters/${character.charCodeAt(0)}.json`)
-                .then((response) => response.data)
-                .catch((err) => {
-                  console.log(`Promise Rejected: ${err}`);
-                  return null;
-                });
-            }
-            return new Promise<HanziDictionaryEntry | null>((resolve) =>
-              resolve(null)
-            );
-          })
+          newCharacters.map((character) =>
+            axios
+              .get(`characters/${character.charCodeAt(0)}.json`)
+              .then((response) => response.data)
+              .catch((err) => {
+                console.log(`Promise Rejected: ${err}`);
+                return null;
+              })
+          )
         ).then((dictionaryEntries: Array<HanziDictionaryEntry | null>) => {
           setDictionary(
             dictionaryEntries
