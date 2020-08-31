@@ -73,7 +73,7 @@ export default function App() {
             <Navbar bg="danger">
               <Navbar.Brand>Zěnme Xiě</Navbar.Brand>
             </Navbar>
-            {<HanziCardList text={text} dictionary={dictionary} />}
+            <HanziCardList text={text} dictionary={dictionary} />
           </Col>
         </Row>
       </Container>
