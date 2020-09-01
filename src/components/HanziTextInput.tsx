@@ -1,4 +1,4 @@
-import OpenCC from 'opencc-js';
+import opencc from 'node-opencc';
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
@@ -32,7 +32,7 @@ export default function HanziTextInput({ text, setText }: HanziTextInputProp) {
           variant={charSet === CharSet.Traditional ? 'light' : 'outline-light'}
           onClick={async () => {
             setCharSet(CharSet.Traditional);
-            setText((await OpenCC.Converter('cn', 'tw'))(text));
+            setText(opencc.simplifiedToTraditional(text));
           }}
         >
           T
@@ -41,7 +41,7 @@ export default function HanziTextInput({ text, setText }: HanziTextInputProp) {
           variant={charSet === CharSet.Simplified ? 'light' : 'outline-light'}
           onClick={async () => {
             setCharSet(CharSet.Simplified);
-            setText((await OpenCC.Converter('tw', 'cn'))(text));
+            setText(opencc.traditionalToSimplified(text));
           }}
         >
           S
