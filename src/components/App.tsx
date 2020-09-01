@@ -1,24 +1,14 @@
 import axios from 'axios';
-import OpenCC from 'opencc-js';
 import _ from 'lodash';
 import React, { useEffect, useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import FormControl from 'react-bootstrap/FormControl';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
-import styles from 'zenme-xie/components/App.module.scss';
 import HanziCardList from 'zenme-xie/components/HanziCardList';
+import HanziTextInput from 'zenme-xie/components/HanziTextInput';
 import HanziDictionaryEntry from 'zenme-xie/types/HanziDictionaryEntry';
 import { isHanzi } from 'zenme-xie/utils/hanzi';
-
-enum CharSet {
-  None,
-  Traditional,
-  Simplified,
-}
 
 export default function App() {
   const [text, setText] = useState('貓咪喵喵叫');
@@ -26,7 +16,6 @@ export default function App() {
   const [dictionary, setDictionary] = useState<
     Map<string, HanziDictionaryEntry | null>
   >(new Map());
-  const [charSet, setCharSet] = useState(CharSet.None);
   useEffect(() => {
     if (prevText !== text) {
       setPrevText(text);
@@ -70,44 +59,7 @@ export default function App() {
     <div className="App">
       <Navbar bg="danger" variant="dark" fixed="top">
         <Navbar.Brand href="/">怎麼寫</Navbar.Brand>
-        <div className={styles.textInputGroup}>
-          <FormControl
-            type="text"
-            size="lg"
-            value={text}
-            placeholder="你想寫什麼？"
-            onChange={(e) => {
-              setCharSet(CharSet.None);
-              setText(e.target.value ?? '');
-            }}
-            className={styles.textInput}
-          />
-          <ButtonGroup size="lg">
-            &nbsp;
-            <Button
-              variant={
-                charSet === CharSet.Traditional ? 'light' : 'outline-light'
-              }
-              onClick={async () => {
-                setCharSet(CharSet.Traditional);
-                setText((await OpenCC.Converter('cn', 'tw'))(text));
-              }}
-            >
-              T
-            </Button>
-            <Button
-              variant={
-                charSet === CharSet.Simplified ? 'light' : 'outline-light'
-              }
-              onClick={async () => {
-                setCharSet(CharSet.Simplified);
-                setText((await OpenCC.Converter('tw', 'cn'))(text));
-              }}
-            >
-              S
-            </Button>
-          </ButtonGroup>
-        </div>
+        <HanziTextInput text={text} setText={setText} />
       </Navbar>
       <Container>
         <Row>
