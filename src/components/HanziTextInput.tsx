@@ -53,5 +53,5 @@ export default function HanziTextInput({ text, setText }: HanziTextInputProp) {
 
 interface HanziTextInputProp {
   text: string;
-  setText: React.Dispatch<React.SetStateAction<string>>;
+  setText: (text: string) => any;
 }

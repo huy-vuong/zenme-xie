@@ -59,7 +59,12 @@ export default function App() {
     <div className="App">
       <Navbar bg="danger" variant="dark" fixed="top">
         <Navbar.Brand href="/">怎麼寫</Navbar.Brand>
-        <HanziTextInput text={text} setText={setText} />
+        <HanziTextInput
+          text={text}
+          setText={(text) => {
+            setText(text);
+          }}
+        />
       </Navbar>
       <Container>
         <Row>
