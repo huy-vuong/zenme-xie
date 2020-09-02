@@ -3,10 +3,10 @@ import _ from 'lodash';
 import React, { useEffect, useState } from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import FormControl from 'react-bootstrap/FormControl';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import HanziCardList from 'zenme-xie/components/HanziCardList';
+import HanziTextInput from 'zenme-xie/components/HanziTextInput';
 import HanziDictionaryEntry from 'zenme-xie/types/HanziDictionaryEntry';
 import { isHanzi } from 'zenme-xie/utils/hanzi';
 
@@ -59,12 +59,11 @@ export default function App() {
     <div className="App">
       <Navbar bg="danger" variant="dark" fixed="top">
         <Navbar.Brand href="/">怎麼寫</Navbar.Brand>
-        <FormControl
-          type="text"
-          size="lg"
-          value={text}
-          placeholder="你想寫什麼？"
-          onChange={(e) => setText(e.target.value ?? '')}
+        <HanziTextInput
+          text={text}
+          setText={(text) => {
+            setText(text);
+          }}
         />
       </Navbar>
       <Container>

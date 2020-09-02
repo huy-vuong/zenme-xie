@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the given text 1`] = `
+<DocumentFragment>
+  <div
+    class="textInputGroup"
+  >
+    <input
+      class="textInput form-control form-control-lg"
+      placeholder="你想寫什麼？"
+      type="text"
+      value="貓咪喵喵叫"
+    />
+    <div
+      class="btn-group btn-group-lg"
+      role="group"
+    >
+       
+      <button
+        class="btn btn-outline-light"
+        type="button"
+      >
+        T
+      </button>
+      <button
+        class="btn btn-outline-light"
+        type="button"
+      >
+        S
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
