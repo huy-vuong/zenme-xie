@@ -27,7 +27,7 @@ async function loadHanziDictionary() {
       .map(async (entry) => {
         if (entry.characterCode !== -1) {
           await fsPromises.writeFile(
-            `public/characters/${entry.characterCode}.json`,
+            `public/dictionary/${entry.characterCode}.json`,
             JSON.stringify(entry.data)
           );
         }

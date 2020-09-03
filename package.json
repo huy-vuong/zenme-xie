@@ -40,6 +40,7 @@
     "deploy": "gh-pages -d build",
     "format": "prettier --write src/**/*.{ts,tsx,css}",
     "lint": "eslint src/**/*.{ts,tsx} --fix && tsc --noEmit",
+    "load-hanzi-dictionary": "node loadHanziDictionary.js",
     "preinstall": "command -v link-module-alias && link-module-alias clean || true",
     "postinstall": "link-module-alias",
     "start": "react-scripts start",
