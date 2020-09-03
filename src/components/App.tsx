@@ -29,7 +29,7 @@ export default function App() {
         Promise.all(
           newCharacters.map((character) =>
             axios
-              .get(`characters/${character.charCodeAt(0)}.json`)
+              .get(`dictionary/${character.charCodeAt(0)}.json`)
               .then((response) => response.data)
               .catch((err) => {
                 console.log(`Promise Rejected: ${err}`);
