@@ -10,10 +10,12 @@ import HanziGrid from 'zenme-xie/components/HanziGrid';
 import HanziSteps from 'zenme-xie/components/HanziSteps';
 import PinyinList from 'zenme-xie/components/PinyinList';
 import HanziDictionaryEntry from 'zenme-xie/types/HanziDictionaryEntry';
+import HanziGraphicsEntry from 'zenme-xie/types/HanziGraphicsEntry';
 
 export default function HanziCard({
   character,
   dictionaryEntry,
+  graphicsEntry,
   index,
 }: HanziCardProp) {
   return (
@@ -53,7 +55,7 @@ export default function HanziCard({
                 <br />
               </div>
               <HanziSteps
-                character={character}
+                graphicsEntry={graphicsEntry}
                 id={`hanzi-steps-${index}-${character.charCodeAt(0)}`}
                 activeStrokeColor="#dc3545"
               />
@@ -71,6 +73,7 @@ export default function HanziCard({
 interface HanziCardProp {
   character: string;
   dictionaryEntry: HanziDictionaryEntry | null;
+  graphicsEntry: HanziGraphicsEntry | null;
   index: number;
 }
 
@@ -80,6 +83,14 @@ HanziCard.propTypes = {
     character: PropTypes.string,
     definition: PropTypes.string,
     pinyin: PropTypes.arrayOf(PropTypes.string),
+  }),
+  graphicsEntry: PropTypes.shape({
+    character: PropTypes.string,
+    strokes: PropTypes.arrayOf(PropTypes.string),
+    medians: PropTypes.arrayOf(
+      PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number))
+    ),
+    radStrokes: PropTypes.arrayOf(PropTypes.number),
   }),
   index: PropTypes.number.isRequired,
 };

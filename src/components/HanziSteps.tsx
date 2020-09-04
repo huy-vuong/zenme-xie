@@ -1,33 +1,19 @@
-import HanziWriter from 'hanzi-writer';
 import PropTypes from 'prop-types';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import HanziStep from 'zenme-xie/components/HanziStep';
 import styles from 'zenme-xie/components/HanziSteps.module.scss';
 import HanziGraphicsEntry from 'zenme-xie/types/HanziGraphicsEntry';
-import { isHanzi } from 'zenme-xie/utils/hanzi';
 
-export default function HanziSteps({ character, id }: HanziStepsProp) {
-  const [characterData, setCharacterData] = useState<HanziGraphicsEntry | null>(
-    null
-  );
-  useEffect(() => {
-    if (!characterData && isHanzi(character)) {
-      HanziWriter.loadCharacterData(character[0]).then(
-        (loadedCharacterData: HanziGraphicsEntry) => {
-          setCharacterData(loadedCharacterData);
-        }
-      );
-    }
-  });
+export default function HanziSteps({ graphicsEntry, id }: HanziStepsProp) {
   return (
     <div id={id} className={styles.hanziSteps}>
-      {characterData?.strokes.map((_stroke, index) => (
+      {graphicsEntry?.strokes?.map((_stroke, index) => (
         <span
           key={`${id}-stroke-${index}`}
           data-testid={`${id}-stroke-${index}`}
         >
           <HanziStep
-            characterData={characterData}
+            characterData={graphicsEntry}
             strokeIndex={index}
             id={`${id}-stroke-${index}`}
             activeStrokeColor="#dc3545"
@@ -39,7 +25,7 @@ export default function HanziSteps({ character, id }: HanziStepsProp) {
 }
 
 interface HanziStepsProp {
-  character: string;
+  graphicsEntry: HanziGraphicsEntry | null;
   id: string;
   size?: number;
   strokeColor?: string;
@@ -47,7 +33,14 @@ interface HanziStepsProp {
 }
 
 HanziSteps.propTypes = {
-  character: PropTypes.string.isRequired,
+  graphicsEntry: PropTypes.shape({
+    character: PropTypes.string,
+    strokes: PropTypes.arrayOf(PropTypes.string),
+    medians: PropTypes.arrayOf(
+      PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number))
+    ),
+    radStrokes: PropTypes.arrayOf(PropTypes.number),
+  }),
   id: PropTypes.string.isRequired,
   size: PropTypes.number,
   strokeColor: PropTypes.string,
