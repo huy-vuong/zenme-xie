@@ -77,7 +77,7 @@ const dictionary = new Map<string, HanziDictionaryEntry>([
 ]);
 const graphics = new Map<string, HanziGraphicsEntry>([
   [
-    '',
+    '貓',
     {
       character: '貓',
       strokes: [
