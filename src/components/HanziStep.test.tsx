@@ -32,7 +32,12 @@ test('renders the active stroke a different color', () => {
 test('renders an empty rice grid given no character data', () => {
   const { asFragment } = render(
     <HanziStep
-      characterData={{ strokes: [], medians: [], radStrokes: [] }}
+      characterData={{
+        character: '',
+        strokes: [],
+        medians: [],
+        radStrokes: [],
+      }}
       strokeIndex={0}
       id="test"
     />
@@ -42,6 +47,7 @@ test('renders an empty rice grid given no character data', () => {
 
 // 什
 const characterData = {
+  character: '什',
   strokes: [
     'M 266 534 Q 309 589 356 661 Q 384 712 411 735 Q 421 747 417 763 Q 413 778 381 804 Q 350 825 329 825 Q 308 824 317 798 Q 332 764 318 736 Q 278 640 216 553 Q 158 468 76 375 Q 64 363 62 356 Q 58 343 74 346 Q 119 356 223 483 Q 230 493 240 502 L 266 534 Z',
     'M 240 502 Q 261 433 262 403 Q 255 265 251 241 Q 244 189 229 135 Q 214 86 251 38 Q 252 35 256 32 Q 275 16 287 44 Q 302 86 302 134 Q 308 387 318 445 Q 325 473 315 484 Q 297 506 283 520 Q 276 529 266 534 C 242 552 231 531 240 502 Z',
