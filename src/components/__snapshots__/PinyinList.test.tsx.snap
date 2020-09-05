@@ -14,7 +14,7 @@ exports[`renders each of the given pinyin 1`] = `
     <span
       class="pinyinSeparator"
     >
-       • 
+       • 
     </span>
     <code
       class="pinyin"

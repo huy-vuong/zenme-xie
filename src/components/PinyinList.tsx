@@ -20,8 +20,7 @@ export default function PinyinList({ id, pinyinList }: PinyinListProp) {
               className={styles.pinyinSeparator}
               key={`${id}-separator-${pinyinIndex}`}
             >
-              {' '}
-              •{' '}
+              &nbsp;•&nbsp;
             </span>,
           ],
           1
