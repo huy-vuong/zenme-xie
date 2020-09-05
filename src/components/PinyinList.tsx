@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styles from 'zenme-xie/components/PinyinList.module.scss';
@@ -5,15 +6,27 @@ import styles from 'zenme-xie/components/PinyinList.module.scss';
 export default function PinyinList({ id, pinyinList }: PinyinListProp) {
   return (
     <div className={styles.pinyinList}>
-      {pinyinList?.map((pinyin, pinyinIndex) => (
-        <code
-          id={`${id}-${pinyinIndex}`}
-          className={styles.pinyin}
-          key={`${id}-${pinyinIndex}`}
-        >
-          {pinyin}
-        </code>
-      ))}
+      {_.initial(
+        pinyinList?.flatMap(
+          (pinyin, pinyinIndex) => [
+            <code
+              id={`${id}-${pinyinIndex}`}
+              className={styles.pinyin}
+              key={`${id}-${pinyinIndex}`}
+            >
+              {pinyin}
+            </code>,
+            <span
+              className={styles.pinyinSeparator}
+              key={`${id}-separator-${pinyinIndex}`}
+            >
+              {' '}
+              •{' '}
+            </span>,
+          ],
+          1
+        )
+      )}
     </div>
   );
 }
