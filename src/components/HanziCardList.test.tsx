@@ -48,6 +48,24 @@ const dictionary = new Map<string, HanziDictionaryEntry>([
       character: '貓',
       definition: 'cat',
       pinyin: ['māo'],
+      matches: [
+        [0],
+        [0],
+        [0],
+        [0],
+        [0],
+        [0],
+        [0],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+      ],
     },
   ],
   [
@@ -56,6 +74,7 @@ const dictionary = new Map<string, HanziDictionaryEntry>([
       character: '咪',
       definition: "a cat's meow; a meter",
       pinyin: ['mī'],
+      matches: [[0], [0], [0], [1], [1], [1], [1], [1], [1]],
     },
   ],
   [
@@ -64,6 +83,7 @@ const dictionary = new Map<string, HanziDictionaryEntry>([
       character: '喵',
       definition: "a cat's meow",
       pinyin: ['miāo'],
+      matches: [[0], [0], [0], [1], [1], [1], [1], [1], [1], [1], [1]],
     },
   ],
   [
@@ -72,6 +92,7 @@ const dictionary = new Map<string, HanziDictionaryEntry>([
       character: '叫',
       definition: 'cry, shout; to call, to greet, to hail',
       pinyin: ['jiào'],
+      matches: [[0], [0], [0], [1], [1]],
     },
   ],
 ]);

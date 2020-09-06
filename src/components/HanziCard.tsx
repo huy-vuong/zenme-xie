@@ -36,6 +36,8 @@ export default function HanziCard({
               >
                 <HanziGrid
                   character={character}
+                  dictionaryEntry={dictionaryEntry}
+                  graphicsEntry={graphicsEntry}
                   id={`hanzi-grid-${index}-${character.charCodeAt(0)}-${theme}`}
                   delayBetweenStrokes={250}
                   radicalColor={primaryColor}
@@ -87,6 +89,7 @@ HanziCard.propTypes = {
     character: PropTypes.string,
     definition: PropTypes.string,
     pinyin: PropTypes.arrayOf(PropTypes.string),
+    matches: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)),
   }),
   graphicsEntry: PropTypes.shape({
     character: PropTypes.string,
