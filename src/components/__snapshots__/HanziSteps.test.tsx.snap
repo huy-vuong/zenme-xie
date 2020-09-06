@@ -21,7 +21,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-0"
+        id="test-stroke-0-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -107,7 +107,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-1"
+        id="test-stroke-1-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -197,7 +197,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-2"
+        id="test-stroke-2-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -291,7 +291,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-3"
+        id="test-stroke-3-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -389,7 +389,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-4"
+        id="test-stroke-4-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -491,7 +491,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-5"
+        id="test-stroke-5-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -597,7 +597,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-6"
+        id="test-stroke-6-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -707,7 +707,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-7"
+        id="test-stroke-7-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -821,7 +821,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-8"
+        id="test-stroke-8-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -939,7 +939,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-9"
+        id="test-stroke-9-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -1061,7 +1061,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-10"
+        id="test-stroke-10-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -1187,7 +1187,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-11"
+        id="test-stroke-11-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -1317,7 +1317,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-12"
+        id="test-stroke-12-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -1451,7 +1451,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-13"
+        id="test-stroke-13-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -1589,7 +1589,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-14"
+        id="test-stroke-14-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -1731,7 +1731,7 @@ exports[`renders steps for the given character graphics data 1`] = `
       <svg
         class="hanziStep"
         height="94"
-        id="test-stroke-15"
+        id="test-stroke-15-light"
         width="94"
         xmlns="http://www.w3.org/2000/svg"
       >

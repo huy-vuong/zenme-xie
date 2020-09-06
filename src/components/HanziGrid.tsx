@@ -9,13 +9,13 @@ export default function HanziGrid({
   id,
   size = 300,
   delayBetweenStrokes = 1000,
-  // strokeColor = '#dddddd',
-  strokeColor = '#555555',
+  strokeColor,
   radicalColor = null,
-  // outlineColor = '#333333',
-  outlineColor = '#cccccc',
+  outlineColor,
   animateOnClick = false,
 }: HanziGridProp) {
+  const defaultStrokeColor = '#555555';
+  const defaultOutlineColor = '#cccccc';
   const [strokeRenderStarted, setStrokeRenderStarted] = useState(false);
   useEffect(() => {
     if (!strokeRenderStarted && isHanzi(character)) {
@@ -23,10 +23,10 @@ export default function HanziGrid({
       const writer = HanziWriter.create(id, character, {
         width: size,
         height: size,
-        strokeColor,
+        strokeColor: strokeColor ?? defaultStrokeColor,
         delayBetweenStrokes,
         radicalColor,
-        outlineColor,
+        outlineColor: outlineColor ?? defaultOutlineColor,
       });
       if (animateOnClick) {
         document.getElementById(id)?.addEventListener('click', () => {
@@ -41,11 +41,13 @@ export default function HanziGrid({
     size,
     delayBetweenStrokes,
     strokeColor,
+    defaultStrokeColor,
     radicalColor,
     outlineColor,
+    defaultOutlineColor,
     animateOnClick,
   ]);
-  return <RiceGrid id={id} />;
+  return <RiceGrid id={id} key={id} />;
 }
 
 interface HanziGridProp {

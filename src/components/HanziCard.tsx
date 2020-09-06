@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useContext } from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
@@ -9,6 +9,8 @@ import HanziDefinition from 'zenme-xie/components/HanziDefinition';
 import HanziGrid from 'zenme-xie/components/HanziGrid';
 import HanziSteps from 'zenme-xie/components/HanziSteps';
 import PinyinList from 'zenme-xie/components/PinyinList';
+import ThemeContext from 'zenme-xie/components/ThemeContext';
+import { Theme } from 'zenme-xie/types/Context';
 import HanziDictionaryEntry from 'zenme-xie/types/HanziDictionaryEntry';
 import HanziGraphicsEntry from 'zenme-xie/types/HanziGraphicsEntry';
 
@@ -18,6 +20,8 @@ export default function HanziCard({
   graphicsEntry,
   index,
 }: HanziCardProp) {
+  const theme = useContext(ThemeContext);
+  const primaryColor = theme === Theme.Light ? '#dc3545' : '#23caba';
   return (
     <Card className={styles.hanziCard}>
       <Card.Body>
@@ -28,13 +32,13 @@ export default function HanziCard({
             <Col lg={4} md={12}>
               <div
                 className={styles.hanziGrid}
-                key={`hanzi-grid-${index}-${character.charCodeAt(0)}`}
+                key={`hanzi-grid-${index}-${character.charCodeAt(0)}-${theme}`}
               >
                 <HanziGrid
                   character={character}
-                  id={`hanzi-grid-${index}-${character.charCodeAt(0)}`}
+                  id={`hanzi-grid-${index}-${character.charCodeAt(0)}-${theme}`}
                   delayBetweenStrokes={250}
-                  radicalColor="#dc3545"
+                  radicalColor={primaryColor}
                   animateOnClick={true}
                 />
               </div>
@@ -57,7 +61,7 @@ export default function HanziCard({
               <HanziSteps
                 graphicsEntry={graphicsEntry}
                 id={`hanzi-steps-${index}-${character.charCodeAt(0)}`}
-                activeStrokeColor="#dc3545"
+                activeStrokeColor={primaryColor}
               />
             </Col>
           </Row>

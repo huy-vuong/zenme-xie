@@ -4,7 +4,11 @@ import HanziSteps from 'zenme-xie/components/HanziSteps';
 
 test('renders steps for the given character graphics data', async () => {
   const { container, getByTestId, asFragment } = render(
-    <HanziSteps graphicsEntry={graphicsEntry} id="test" />
+    <HanziSteps
+      graphicsEntry={graphicsEntry}
+      id="test"
+      activeStrokeColor="#dc3545"
+    />
   );
   await waitFor(
     () => {
@@ -31,7 +35,9 @@ test('renders steps for the given character graphics data', async () => {
 });
 
 test('renders nothing given no character graphics data', () => {
-  const { asFragment } = render(<HanziSteps graphicsEntry={null} id="test" />);
+  const { asFragment } = render(
+    <HanziSteps graphicsEntry={null} id="test" activeStrokeColor="#dc3545" />
+  );
   expect(asFragment()).toMatchSnapshot();
 });
 

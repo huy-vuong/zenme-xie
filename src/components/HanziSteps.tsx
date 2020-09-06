@@ -1,22 +1,28 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useContext } from 'react';
 import HanziStep from 'zenme-xie/components/HanziStep';
 import styles from 'zenme-xie/components/HanziSteps.module.scss';
+import ThemeContext from 'zenme-xie/components/ThemeContext';
 import HanziGraphicsEntry from 'zenme-xie/types/HanziGraphicsEntry';
 
-export default function HanziSteps({ graphicsEntry, id }: HanziStepsProp) {
+export default function HanziSteps({
+  graphicsEntry,
+  id,
+  activeStrokeColor,
+}: HanziStepsProp) {
+  const theme = useContext(ThemeContext);
   return (
     <div id={id} className={styles.hanziSteps}>
       {graphicsEntry?.strokes?.map((_stroke, index) => (
         <span
-          key={`${id}-stroke-${index}`}
+          key={`${id}-stroke-${index}-${theme}`}
           data-testid={`${id}-stroke-${index}`}
         >
           <HanziStep
             characterData={graphicsEntry}
             strokeIndex={index}
-            id={`${id}-stroke-${index}`}
-            activeStrokeColor="#dc3545"
+            id={`${id}-stroke-${index}-${theme}`}
+            activeStrokeColor={activeStrokeColor}
           />
         </span>
       ))}

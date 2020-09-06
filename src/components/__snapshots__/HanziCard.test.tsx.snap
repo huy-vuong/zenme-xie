@@ -32,7 +32,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
             >
               <svg
                 height="300"
-                id="hanzi-grid-0-35987"
+                id="hanzi-grid-0-35987-light"
                 width="300"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -139,7 +139,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-0"
+                  id="hanzi-steps-0-35987-stroke-0-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -225,7 +225,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-1"
+                  id="hanzi-steps-0-35987-stroke-1-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -315,7 +315,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-2"
+                  id="hanzi-steps-0-35987-stroke-2-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -409,7 +409,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-3"
+                  id="hanzi-steps-0-35987-stroke-3-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -507,7 +507,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-4"
+                  id="hanzi-steps-0-35987-stroke-4-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -609,7 +609,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-5"
+                  id="hanzi-steps-0-35987-stroke-5-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -715,7 +715,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-6"
+                  id="hanzi-steps-0-35987-stroke-6-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -825,7 +825,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-7"
+                  id="hanzi-steps-0-35987-stroke-7-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -939,7 +939,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-8"
+                  id="hanzi-steps-0-35987-stroke-8-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -1057,7 +1057,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-9"
+                  id="hanzi-steps-0-35987-stroke-9-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -1179,7 +1179,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-10"
+                  id="hanzi-steps-0-35987-stroke-10-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -1305,7 +1305,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-11"
+                  id="hanzi-steps-0-35987-stroke-11-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -1435,7 +1435,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-12"
+                  id="hanzi-steps-0-35987-stroke-12-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -1569,7 +1569,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-13"
+                  id="hanzi-steps-0-35987-stroke-13-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -1707,7 +1707,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-14"
+                  id="hanzi-steps-0-35987-stroke-14-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -1849,7 +1849,7 @@ exports[`renders a card containing the character in a rice grid 1`] = `
                 <svg
                   class="hanziStep"
                   height="94"
-                  id="hanzi-steps-0-35987-stroke-15"
+                  id="hanzi-steps-0-35987-stroke-15-light"
                   width="94"
                   xmlns="http://www.w3.org/2000/svg"
                 >

@@ -5,13 +5,17 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
+import styles from 'zenme-xie/components/App.module.scss';
 import HanziCardList from 'zenme-xie/components/HanziCardList';
 import HanziTextInput from 'zenme-xie/components/HanziTextInput';
+import ThemeContext from 'zenme-xie/components/ThemeContext';
+import { Theme } from 'zenme-xie/types/Context';
 import HanziDictionaryEntry from 'zenme-xie/types/HanziDictionaryEntry';
 import HanziGraphicsEntry from 'zenme-xie/types/HanziGraphicsEntry';
 import { isHanzi } from 'zenme-xie/utils/hanzi';
 
 export default function App() {
+  const [theme, setTheme] = useState(Theme.Light);
   const [text, setText] = useState('貓咪喵喵叫');
   const [prevText, setPrevText] = useState('');
   const [dictionary, setDictionary] = useState(
@@ -80,30 +84,59 @@ export default function App() {
     }
   }, [prevText, text, dictionary, graphics]);
   return (
-    <div className="App">
-      <Navbar bg="danger" variant="dark" fixed="top">
-        <Navbar.Brand href="/">怎麼寫</Navbar.Brand>
-        <HanziTextInput
-          text={text}
-          setText={(text) => {
-            setText(text);
-          }}
-        />
-      </Navbar>
-      <Container>
-        <Row>
-          <Col>
-            <Navbar bg="danger">
-              <Navbar.Brand>Zěnme Xiě</Navbar.Brand>
+    <ThemeContext.Provider value={theme}>
+      <ThemeContext.Consumer>
+        {(theme) => (
+          <div
+            className={
+              theme === Theme.Light ? styles.lightTheme : styles.darkTheme
+            }
+          >
+            <Navbar
+              bg="info"
+              variant={theme === Theme.Light ? 'dark' : 'light'}
+              fixed="top"
+              className={
+                theme === Theme.Light ? styles.navBarLight : styles.navBarDark
+              }
+            >
+              <Navbar.Brand
+                onClick={() => {
+                  setTheme(theme === Theme.Light ? Theme.Dark : Theme.Light);
+                }}
+              >
+                怎麼寫
+              </Navbar.Brand>
+              <HanziTextInput
+                text={text}
+                setText={(text) => {
+                  setText(text);
+                }}
+              />
             </Navbar>
-            <HanziCardList
-              text={text}
-              dictionary={dictionary}
-              graphics={graphics}
-            />
-          </Col>
-        </Row>
-      </Container>
-    </div>
+            <Container
+              className={
+                theme === Theme.Light
+                  ? styles.appContainerLight
+                  : styles.appContainerDark
+              }
+            >
+              <Row>
+                <Col>
+                  <Navbar bg="danger">
+                    <Navbar.Brand>Zěnme Xiě</Navbar.Brand>
+                  </Navbar>
+                  <HanziCardList
+                    text={text}
+                    dictionary={dictionary}
+                    graphics={graphics}
+                  />
+                </Col>
+              </Row>
+            </Container>
+          </div>
+        )}
+      </ThemeContext.Consumer>
+    </ThemeContext.Provider>
   );
 }

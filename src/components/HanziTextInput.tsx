@@ -1,9 +1,11 @@
 import opencc from 'node-opencc';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import styles from 'zenme-xie/components/HanziTextInput.module.scss';
+import ThemeContext from 'zenme-xie/components/ThemeContext';
+import { Theme } from 'zenme-xie/types/Context';
 
 enum CharSet {
   None,
@@ -12,7 +14,11 @@ enum CharSet {
 }
 
 export default function HanziTextInput({ text, setText }: HanziTextInputProp) {
+  const theme = useContext(ThemeContext);
   const [charSet, setCharSet] = useState(CharSet.None);
+  const defaultVariant = theme === Theme.Light ? 'light' : 'dark';
+  const activeVariant =
+    theme === Theme.Light ? 'outline-light' : 'outline-dark';
   return (
     <div className={styles.textInputGroup}>
       <FormControl
@@ -29,7 +35,9 @@ export default function HanziTextInput({ text, setText }: HanziTextInputProp) {
       <ButtonGroup size="lg">
         &nbsp;
         <Button
-          variant={charSet === CharSet.Traditional ? 'light' : 'outline-light'}
+          variant={
+            charSet === CharSet.Traditional ? defaultVariant : activeVariant
+          }
           onClick={async () => {
             setCharSet(CharSet.Traditional);
             setText(opencc.simplifiedToTraditional(text));
@@ -38,7 +46,9 @@ export default function HanziTextInput({ text, setText }: HanziTextInputProp) {
           T
         </Button>
         <Button
-          variant={charSet === CharSet.Simplified ? 'light' : 'outline-light'}
+          variant={
+            charSet === CharSet.Simplified ? defaultVariant : activeVariant
+          }
           onClick={async () => {
             setCharSet(CharSet.Simplified);
             setText(opencc.traditionalToSimplified(text));

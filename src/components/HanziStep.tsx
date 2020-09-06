@@ -1,8 +1,8 @@
 import HanziWriter from 'hanzi-writer';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
-import RiceGrid from 'zenme-xie/components/RiceGrid';
 import styles from 'zenme-xie/components/HanziStep.module.scss';
+import RiceGrid from 'zenme-xie/components/RiceGrid';
 import HanziGraphicsEntry from 'zenme-xie/types/HanziGraphicsEntry';
 
 export default function HanziStep({
@@ -10,7 +10,6 @@ export default function HanziStep({
   strokeIndex,
   id,
   size = 94,
-  // strokeColor = '#dddddd',
   strokeColor = '#555555',
   activeStrokeColor,
 }: HanziStepProp) {

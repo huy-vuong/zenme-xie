@@ -1,0 +1,20 @@
+.lightTheme {
+  background-color: #ffffff;
+}
+
+.darkTheme {
+  background-color: #000000;
+}
+
+.navBarLight {
+  background-color: #dc3545 !important;
+}
+
+.navBarDark {
+  background-color: #23caba !important;
+  filter: invert(100%);
+}
+
+.appContainerDark {
+  filter: invert(100%);
+}
