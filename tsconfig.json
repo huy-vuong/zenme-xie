@@ -17,5 +17,8 @@
     "noEmit": true,
     "jsx": "react"
   },
+  "paths": {
+    "zenme-xie/*": ["src/*"]
+  },
   "include": ["src"]
 }

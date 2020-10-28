@@ -32,8 +32,7 @@
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "link-module-alias": "^1.2.0"
+    "ts-jest": "^26.4.3"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -42,30 +41,13 @@
     "lint": "eslint src/**/*.{ts,tsx} --fix && tsc --noEmit",
     "load-hanzi-dictionary": "node loadHanziDictionary.js",
     "load-hanzi-graphics": "node loadHanziGraphics.js",
-    "preinstall": "command -v link-module-alias && link-module-alias clean || true",
-    "postinstall": "link-module-alias",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app",
-    "settings": {
-      "import/resolver": {
-        "alias": {
-          "map": [
-            [
-              "zenme-xie",
-              "./src"
-            ]
-          ],
-          "extensions": [
-            ".tsx"
-          ]
-        }
-      }
-    }
+    "extends": "react-app"
   },
   "prettier": {
     "singleQuote": true
@@ -83,8 +65,10 @@
       "prettier --write"
     ]
   },
-  "_moduleAliases": {
-    "zenme-xie": "src"
+  "jest": {
+    "moduleNameMapper": {
+      "^zenme-xie/(.*)$": "<rootDir>/src/$1"
+    }
   },
   "browserslist": {
     "production": [
