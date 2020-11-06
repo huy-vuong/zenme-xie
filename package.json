@@ -5,7 +5,7 @@
   "homepage": "https://huy-vuong.github.io/zenme-xie",
   "dependencies": {
     "@types/jest": "^26.0.15",
-    "@types/lodash": "^4.14.164",
+    "@types/lodash": "^4.14.165",
     "@types/node": "^14.14.6",
     "@types/prop-types": "^15.7.3",
     "@types/react": "^16.9.55",
