@@ -24,7 +24,7 @@
     "react": "^16.14.0",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "4.0.0",
+    "react-scripts": "4.0.1",
     "typescript": "^4.0.5"
   },
   "devDependencies": {
