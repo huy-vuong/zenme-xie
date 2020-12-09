@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://huy-vuong.github.io/zenme-xie",
   "dependencies": {
-    "@types/jest": "^26.0.17",
+    "@types/jest": "^26.0.18",
     "@types/lodash": "^4.14.165",
     "@types/node": "^14.14.10",
     "@types/prop-types": "^15.7.3",
