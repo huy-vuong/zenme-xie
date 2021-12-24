@@ -14,7 +14,7 @@
     "bootstrap": "^5.1.1",
     "hanzi-writer": "^2.3.0",
     "husky": "^7.0.4",
-    "lint-staged": "^11.2.6",
+    "lint-staged": "^12.1.4",
     "lodash": "^4.17.21",
     "node-opencc": "^2.0.1",
     "prettier": "^2.4.1",
