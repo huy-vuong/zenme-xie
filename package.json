@@ -5,7 +5,7 @@
   "homepage": "https://zenme-xie.netlify.app",
   "dependencies": {
     "@types/jest": "^27.0.3",
-    "@types/lodash": "^4.14.177",
+    "@types/lodash": "^4.14.178",
     "@types/node": "^16.10.2",
     "@types/prop-types": "^15.7.4",
     "@types/react": "^17.0.33",
