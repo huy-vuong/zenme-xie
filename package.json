@@ -5,7 +5,7 @@
   "homepage": "https://zenme-xie.netlify.app",
   "dependencies": {
     "@types/jest": "^27.0.3",
-    "@types/lodash": "^4.14.177",
+    "@types/lodash": "^4.14.178",
     "@types/node": "^16.10.2",
     "@types/prop-types": "^15.7.4",
     "@types/react": "^17.0.33",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@sheerun/mutationobserver-shim": "^0.3.3",
-    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "eslint-import-resolver-alias": "^1.1.2",
